@@ -1,0 +1,12 @@
+@import "./responsive";
+
+.header {
+  background-image: url("../../images/breadcrumb1.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 110px;
+  @include desktop {
+    height: 285px;
+  }
+}
