@@ -1,0 +1,25 @@
+.about-area {
+  background: #f9f9f9;
+  .about-wrapper {
+    height: 100%;
+    width: 100%;
+    display: table;
+  }
+}
+
+.about-area .about-wrapper > div {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.about-area img {
+  border-radius: 4px;
+}
+
+.about-area .content {
+  margin-top: 15px;
+}
+
+.about-area .content p {
+  margin-bottom: 30px;
+}
