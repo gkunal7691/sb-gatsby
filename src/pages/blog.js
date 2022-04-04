@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import SbHeading from "./sb-heading"
 import { Link } from "gatsby"
 import "../assests/styles/blogs.scss"
@@ -7,7 +7,7 @@ const BlogsPage = () => {
   const categorires = ["Physics", "Chemistry", "Maths", "Biology", "General"]
   return (
     <SbHeading
-      sbHeadingActive={"blogs"}
+      sbHeadingActive={"blog"}
       title="General Info Website!"
       subtitle="Every developer, especially in the
     digital age, outsources new technologies, and there is a need to migrate

@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import "../assests/styles/sb-related-tools.scss"
 import { Link } from "gatsby"
 
@@ -8,7 +8,7 @@ const SbRelatedPage = ({
   sbRelatedTitle3,
 }) => {
   return (
-    <div class="related-tools">
+    <div className="related-tools">
       <h3>Related Tools</h3>
       <div>
         <Link to="/tools/online-xml-formatter">{sbRelatedTitle1}</Link>

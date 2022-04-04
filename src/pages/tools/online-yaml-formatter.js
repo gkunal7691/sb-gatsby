@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import SbTextArea from "../sb-textarea"
 import SbRelatedPage from "../sb-related-tools"
 import SbHeading from "../sb-heading"
@@ -11,15 +11,15 @@ const YamlFormatter = () => {
       title="Free Online YAML or YML Formatter, Prettier and Validator"
       subtitle="We provide free online YAML or YML Formatter, Prettier and Validator which will help many developers in their daily work."
     >
-      <div class="tool-container">
+      <div className="tool-container">
         <SbTextArea type="input" className="text-area" />
-        <div class="button-align">
-          <button class="btn btn-outline-primary">Beautify YAML</button>
+        <div className="button-align">
+          <button className="btn btn-outline-primary">Beautify YAML</button>
         </div>
         <SbTextArea type="Output" className="text-area" />
       </div>
 
-      <div class="grid-container text-container">
+      <div className="grid-container text-container">
         <div>
           <h2>What is YAML?</h2>
           <p>

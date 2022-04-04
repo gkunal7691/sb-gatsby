@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import SbTextArea from "../sb-textarea"
 import SbRelatedPage from "../sb-related-tools"
 import SbHeading from "../sb-heading"
@@ -12,15 +12,15 @@ const JsonFormatter = () => {
       title="Free Online Json Formatter, Prettier and Validator"
       subtitle="We provide free online JSON Formatter, Prettier and Validator which will help many developers in their daily work."
     >
-      <div class="tool-container">
+      <div className="tool-container">
         <SbTextArea type="input" className="text-area" />
-        <div class="button-align">
-          <button class="btn btn-outline-primary">Beautify JSON</button>
+        <div className="button-align">
+          <button className="btn btn-outline-primary">Beautify JSON</button>
         </div>
         <SbTextArea type="output" className="text-area" />
       </div>
 
-      <div class="grid-container text-container">
+      <div className="grid-container text-container">
         <div>
           <h2 style={{ textAlign: "center" }}>JSON Beautifier</h2>
           <p>

@@ -1,10 +1,10 @@
-import React, { Component } from "react"
+import React from "react"
 import Layout from "../components/layout/layout"
 
 const SbHeading = ({ title, subtitle, children, sbHeadingActive }) => {
   return (
     <Layout active={"sb-heading"}>
-      <div class="text-center">
+      <div className="text-center">
         <h1>{title}</h1>
         <p>{subtitle}</p>
       </div>

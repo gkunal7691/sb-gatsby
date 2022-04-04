@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from "react"
-import PropTypes from "prop-types"
+import React from "react"
 import { Link } from "gatsby"
 import logo from "../../images/logo.png"
 import menu from "../../images/menu.png"
@@ -73,7 +72,7 @@ const Header = () => {
                   <Link to="/tools">Tools</Link>
                 </li>
                 <li>
-                  <Link to="/blogs">Blogs</Link>
+                  <Link to="/blog">Blogs</Link>
                 </li>
               </ul>
             </div>

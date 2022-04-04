@@ -1,8 +1,7 @@
-import React, { Component } from "react"
+import React from "react"
 import about from "../images/about.png"
 import { Link } from "gatsby"
 import "../assests/styles/about-us.scss"
-import Layout from "../components/layout/layout"
 import SbBanner from "./sb-banner"
 
 const AboutUsPage = () => {
