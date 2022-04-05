@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import SbHeading from "../sb-heading"
 import "../../assests/styles/tools/online-pdf-password-remover.scss"
 

@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import SbTextArea from "../sb-textarea"
 import SbRelatedPage from "../sb-related-tools"
 import SbHeading from "../sb-heading"

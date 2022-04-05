@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import SbBanner from "./sb-banner"
 import { Link } from "gatsby"
 import "../assests/styles/portfolios.scss"

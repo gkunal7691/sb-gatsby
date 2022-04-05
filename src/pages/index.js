@@ -346,6 +346,7 @@ const IndexPage = () => {
                 <StaticImage
                   src="../images/testimonial/eraofwe-logo.png"
                   alt="eraofwe-logo"
+                  wid
                 />
               </Link>
             </div>
