@@ -1,6 +1,5 @@
-import React, { Component } from "react"
+import React from "react"
 import SbHeading from "../sb-heading"
-import { Link } from "gatsby"
 import "../../assests/styles/tools/online-rar-extractor.scss"
 import folder from "../../images/folder-icon.svg"
 import SbRelatedPage from "../sb-related-tools"

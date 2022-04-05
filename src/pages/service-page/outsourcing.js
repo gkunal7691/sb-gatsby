@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import SbBanner from "../sb-banner"
 import serviceImg from "../../images/20.jpg"
 import OtherServices from "../other-services"

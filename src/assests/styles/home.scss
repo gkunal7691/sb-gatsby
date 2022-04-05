@@ -18,6 +18,7 @@
           line-height: 60px;
         }
         .header-button {
+          margin-left: 5px;
           margin-top: 20px;
           color: #222222;
         }
@@ -214,13 +215,14 @@ textarea {
 // testominal-section-style
 .testimonial-item {
   background-color: white;
+  width:25%;
   border-radius: 4px;
 }
 .testimonial-item .img-thumb {
   margin: 15px;
 }
 .testimonial-item .img-thumb img {
-  width: 10rem;
+  width: 100%;
   padding: 7px;
   height: 65px;
 }

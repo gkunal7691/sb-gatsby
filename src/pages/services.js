@@ -1,7 +1,6 @@
-import React, { Component } from "react"
+import React from "react"
 import SbBanner from "./sb-banner"
 import serviceImg from "../images/20.jpg"
-import { Link } from "gatsby"
 import "../assests/styles/services.scss"
 import OtherServices from "./other-services"
 

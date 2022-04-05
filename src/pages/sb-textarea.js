@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import "../assests/styles/sb-textarea.scss"
 
 const SbTextArea = ({ type }) => {
