@@ -63,18 +63,6 @@ const Header = ({ active }) => {
                   </NavDropdown.Item>
                 ))}
               </NavDropdown>
-              <NavDropdown title="Technologies" id="collasible-nav-dropdown">
-                {technologies.map(t => (
-                  <NavDropdown.Item>
-                    <Link
-                      className="dropdown-style"
-                      to={`/technologies/${t.slug}/`}
-                    >
-                      {t.name}
-                    </Link>
-                  </NavDropdown.Item>
-                ))}
-              </NavDropdown>
               <Nav.Link>
                 <Link to="/tools">Tools</Link>
               </Nav.Link>
