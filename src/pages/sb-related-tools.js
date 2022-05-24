@@ -1,5 +1,5 @@
 import React from "react"
-import "../assests/styles/sb-related-tools.scss"
+import "../assets/styles/sb-related-tools.scss"
 import { Link } from "gatsby"
 
 const SbRelatedPage = ({

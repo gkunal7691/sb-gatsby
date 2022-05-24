@@ -2,7 +2,7 @@ import React from "react"
 import SbTextArea from "../sb-textarea"
 import SbRelatedPage from "../sb-related-tools"
 import SbHeading from "../sb-heading"
-import "../../assests/styles/tools/online-json-to-xml-convertor.scss"
+import "../../assets/styles/tools/online-json-to-xml-convertor.scss"
 
 const JsonToXml = () => {
   return (

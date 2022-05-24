@@ -1,7 +1,7 @@
 import React from "react"
 import SbBanner from "./sb-banner"
 import { Link } from "gatsby"
-import "../assests/styles/portfolios.scss"
+import "../assets/styles/portfolios.scss"
 import portfolio1 from "../images/portfolio/1.jpg"
 import portfolio2 from "../images/portfolio/2.jpg"
 import portfolio3 from "../images/portfolio/3.jpg"

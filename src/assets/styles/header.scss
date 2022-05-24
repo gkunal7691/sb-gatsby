@@ -81,7 +81,7 @@
     }
   }
 
-  .navbar-link > a >a {
+  .navbar-link > a > a {
         color: #1b1b1b !important;
         text-decoration: none !important;
         font-size: 18px !important;
@@ -91,6 +91,9 @@
         letter-spacing: 1px !important;
         transition: all 0.3s ease !important;
         &:hover {
+          color: #13928a !important;
+        }
+        &.active {
           color: #13928a !important;
         }
       }
@@ -107,6 +110,9 @@
         &:hover {
           color: #13928a !important;
         }
+        &.active {
+          color: #13928a !important;
+        }
       }
 
       .dropdown-style{
@@ -119,6 +125,9 @@
         letter-spacing: 1px !important;
         transition: all 0.3s ease !important;
         &:hover {
+          color: #13928a !important;
+        }
+        &.active {
           color: #13928a !important;
         }
       }

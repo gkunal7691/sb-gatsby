@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Mobile Apps",
+    "slug": "mobile-app",
+    "title": "Mobile App Development",
+    "shortDescription": "We design & develop all types of mobile apps for Android as well as iOS.",
+    "longDescription": "The world has moved towards mobile computing. In this era, having a mobile app for your business, whether you are into ecommerce, healthtech, edtech, or fintech, having a mobile app for your business is crucial for your growth. If you are looking for native or cross-platform mobile apps, your search ends today with Softobotics. With a perfect track record of delivering all types of small or large-scale mobile applications, we provide the best solutions as per your business requirements.\n\nWe are experienced in developing apps for various use-cases such as ecommerce, edtech, geospatial, real-time communication, financial transactions, etc.\n\nGet in touch with us today and let us help you find the perfect mobile solutions for your business!",
+    "icon": "mobile"
+  },
+  {
+    "name": "Web Apps",
+    "slug": "web-apps",
+    "title": "Web App Development",
+    "shortDescription": "Get your business online with a great web application.",
+    "longDescription": "If you run your own business, then you know how difficult it can be to stay on top of things with all the work that needs to be done. If you have employees, this gets even more complicated because you have to make sure they are being productive and doing what they need to do, which often involves many tedious tasks. A great way to streamline your workflow, keep up with new clients and make sure that your employees stay at the best of their productivity, is through the use of an online web application.\n\nAt Softobotics, we work with all the latest web technologies such as Angular, React, NodeJS, etc to ensure you get the best customized application for your business.\n\nGet in touch with us today so that we can help you get your product online within no time!",
+    "icon": "stats-up"
+  },
+  {
+    "name": "UI/UX Design",
+    "slug": "ui-ux",
+    "title": "UI/UX Design",
+    "shortDescription": "We provide the best solutions for your UI/UX requirements to ensure your users get nothing but the perfect experience with your product.",
+    "longDescription": "A good User Interface (UI) & User experience (UX) is one of the most overlooked aspects of running a business, but it's also one of the most important factors in making your business successful. In fact, recent surveys show that 71% of customers consider good UX to be more important than the features of the product itself, indicating that good UX can be the key to building loyal customers who will keep coming back and referring their friends and family members to your business. If you want to achieve that level of success with your business, let us help you provide the best user experience to your customers. With our dedicated team of designers & UX Developers, you can rest assured, with Softobotics, your business is in good hands.",
+    "icon": "layers"
+  },
+  {
+    "name": "CRM/CMS Development",
+    "slug": "crm-cms",
+    "title": "CRM/CMS Development",
+    "shortDescription": "Customised Customer Relationship Manager & Content Management System development.",
+    "longDescription": "If you own a business, you have many tasks on your plate, both big and small. It’s important to stay organized if you want to succeed. While there are many ways to do this, there are two central tools that can help keep your business running smoothly: customer relationship management software (CRM) and content management systems (CMS). While these tools are not identical, they both allow businesses to keep track of vital information about their clients and easily share important information with different departments within the company as well as third parties.\n\nWhile using an open-source CMS is good, having one tailored to your business can make all the difference and help you stand out from your competitors.\n\nGet in touch with us today for a consultation on the best CRM/CMS solutions for your business!",
+    "icon": "cog"
+  },
+  {
+    "name": "SEO",
+    "slug": "seo",
+    "title": "Search Engine Optimization",
+    "shortDescription": "We help your business improve its online presence with SEO and digital marketing.",
+    "longDescription": "Ever wondered why your business is not getting organic leads in spite of having a good online presence with the perfect website for your business? Your website may be lacking proper SEO.\n\nSearch engine optimization (SEO) is the process of improving your website's visibility in search engines like Google and Bing. This happens by increasing the relevance of your content to specific keywords, as well as by improving other factors like site load speed and freshness of content. Your rankings in search engines also depend on your backlinks - the links you have from other websites - and the quality of these backlinks matter as well. A poor-quality link from an unrelated or spammy website will do more harm than good to your rankings in search engines, so take care when building your link portfolio.\n\nAt Softobotics, we will help your website rank high on search engines so that your business can get the best organic leads it deserves. Using tools like AHREFS and Semrush, our SEO Experts will guide your business towards an epitome of online growth.",
+    "icon": "users"
+  },
+  {
+    "name": "Resource Outsourcing",
+    "slug": "outsourcing",
+    "title": "Resource Outsourcing",
+    "shortDescription": "We outsource our team of talented developers & designers as an external resource to help your business succeed",
+    "longDescription": "If you're ready to take your business to the next level, you might be considering outsourcing some of your tasks. That's where our team of experienced and talented employees can help you succeed! With our team of talented professionals on hand, you can rest assured you are getting the perfect blend of skills and efficiency. Here are just a few of the things that we specialize in: Cross-platform mobile development, web app development, SEO, UI/UX Design, and so much more! Take advantage of this opportunity and get in touch with us today!",
+    "icon": "rocket"
+  }
+]

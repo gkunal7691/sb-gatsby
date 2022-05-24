@@ -1,7 +1,7 @@
 import React from "react"
 import SbHeading from "./sb-heading"
 import { Link } from "gatsby"
-import "../assests/styles/blogs.scss"
+import "../assets/styles/blogs.scss"
 
 const BlogsPage = () => {
   const categorires = ["Physics", "Chemistry", "Maths", "Biology", "General"]

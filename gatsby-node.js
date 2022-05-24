@@ -1,18 +1,28 @@
-// exports.createPages = async ({ actions }) => {
-//   const { createPage } = actions
-//   createPage({
-//     path: "/using-dsg",
-//     component: require.resolve("./src/templates/using-dsg.js"),
-//     context: {},
-//     defer: true,
-//   })
-// }
+const services = require("./src/assets/json/services.json")
+const technologies = require("./src/assets/json/technologies.json")
 
 const path = require(`path`)
 
 exports.createPages = ({ graphql, actions }) => {
   const BlogPost = path.resolve("./src/templates/blog-post.js")
   const BlogCategory = path.resolve("./src/templates/blog-category.js")
+  const ServicePage = path.resolve("./src/templates/service-page.js")
+
+  services.forEach(s => {
+    actions.createPage({
+      path: `/services/${s.slug}/`,
+      component: ServicePage,
+      context: { ...s, type: "services" },
+    })
+  })
+
+  technologies.forEach(t => {
+    actions.createPage({
+      path: `/technologies/${t.slug}/`,
+      component: ServicePage,
+      context: { ...t, type: "technologies" },
+    })
+  })
 
   return graphql(
     `

@@ -10,11 +10,14 @@ import { Formik } from "formik"
 // import capbpm from "../images/testimonial/capbpm-logo.webp"
 // import prewave from "../images/testimonial/prewave-logo.png"
 // import blobcity from "../images/testimonial/blobcity-logo.png"
-import "../assests/styles/home.scss"
+import "../assets/styles/home.scss"
 import axios from "axios"
 import Layout from "../components/layout/layout"
 import Seo from "../components/layout/seo"
 import "bootstrap/dist/css/bootstrap.min.css"
+import ServiceGrid from "../components/service-grid"
+import technologies from "../assets/json/technologies.json"
+import LineIcon from "react-lineicons"
 
 const IndexPage = () => {
   const submitForm = async (
@@ -54,7 +57,7 @@ const IndexPage = () => {
   }
   return (
     <Layout active={"index"}>
-      <Seo />
+      <Seo title="Innovate, automate and optimize your business with us" />
       <div className="container">
         <div className="hero-area-bg ">
           <div className="row hero-main align-items-center">
@@ -94,139 +97,9 @@ const IndexPage = () => {
         </div>
       </div>
 
-      {/* <!-- Services Section Start --> */}
-      <section className="section-padding py-4 py-md-5">
-        <div className="container">
-          <div className="section-header text-center">
-            <h2 className=" wow fadeInDown" data-wow-delay="0.3s">
-              Our Services
-            </h2>
-            <div className="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-          </div>
-          <div className="row">
-            <div className="col-md-6 col-lg-4 col-xs-12">
-              <div
-                className="services-item wow fadeInRight"
-                data-wow-delay="1.5s"
-              >
-                <div className="icon d-flex justify-content-center align-items-center">
-                  <i className=""></i>
-                </div>
-                <div className="services-content">
-                  <h3>
-                    <Link>Mobile App Development</Link>
-                  </h3>
-                  <p>
-                    We design & develop any type of mobile apps for Andriod as
-                    well as iOS.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4 col-xs-12">
-              <div
-                className="services-item wow fadeInRight"
-                data-wow-delay="1.5s"
-              >
-                <div className="icon d-flex justify-content-center align-items-center">
-                  <i className=""></i>
-                </div>
-                <div className="services-content">
-                  <h3>
-                    <Link>Web App Development</Link>
-                  </h3>
-                  <p>
-                    Any type of web application development using Angular,
-                    React, and Node etc.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4 col-xs-12">
-              <div
-                className="services-item wow fadeInRight"
-                data-wow-delay="1.5s"
-              >
-                <div className="icon d-flex justify-content-center align-items-center">
-                  <i className=""></i>
-                </div>
-                <div className="services-content">
-                  <h3>
-                    <Link>SEO Optimization</Link>
-                  </h3>
-                  <p>
-                    We do SEO and digital marketing to make our clients good
-                    online presence.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4 col-xs-12">
-              <div
-                className="services-item wow fadeInRight"
-                data-wow-delay="1.5s"
-              >
-                <div className="icon d-flex justify-content-center align-items-center">
-                  <i className=""></i>
-                </div>
-                <div className="services-content">
-                  <h3>
-                    <Link>UI/UX Design</Link>
-                  </h3>
-                  <p>
-                    We have great team for UX/UI development for soothing user
-                    experience.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4 col-xs-12">
-              <div
-                className="services-item wow fadeInRight"
-                data-wow-delay="1.5s"
-              >
-                <div className="icon d-flex justify-content-center align-items-center">
-                  <i className=""></i>
-                </div>
-                <div className="services-content">
-                  <h3>
-                    <Link>CRM/CMS Development</Link>
-                  </h3>
-                  <p>
-                    Customised Coustomer Relationship Manager & Content
-                    Management System development.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-6 col-lg-4 col-xs-12">
-              <div
-                className="services-item wow fadeInRight"
-                data-wow-delay="1.5s"
-              >
-                <div className="icon d-flex justify-content-center align-items-center">
-                  <i className=""></i>
-                </div>
-                <div className="services-content">
-                  <h3>
-                    <Link>Resource Outsourcing</Link>
-                  </h3>
-                  <p>
-                    We even outsource our employees as an external resource to
-                    other reputed companies.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* // <!-- Services Section End --> */}
+      {/* Services Section Start */}
+      <ServiceGrid showHeading={true} />
+      {/* Services Section End */}
 
       {/* <!-- Features Section Start --> */}
       <section id="features" className="section-padding ">
@@ -238,33 +111,19 @@ const IndexPage = () => {
           <div className="row">
             <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
               <div className="content-left">
-                <div className="box-item">
-                  <span className="icon">
-                    <i className=""></i>
-                  </span>
-                  <div className="text">
-                    <h4>Front End Development</h4>
-                    <p>Angular, React, Vue, JavaScript etc.</p>
+                {technologies.slice(0, 3).map(t => (
+                  <div className="box-item">
+                    <Link to={`/technologies/${t.slug}/`}>
+                      <span className="icon">
+                        <LineIcon name={t.icon} />
+                      </span>
+                      <div className="text">
+                        <h4 className="text-black">{t.name}</h4>
+                        <p className="text-black">{t.shortDescription}</p>
+                      </div>
+                    </Link>
                   </div>
-                </div>
-                <div className="box-item">
-                  <span className="icon">
-                    <i className=""></i>
-                  </span>
-                  <div className="text">
-                    <h4>Mobile Apps</h4>
-                    <p>Flutter, React Native, Swift, Kotlin</p>
-                  </div>
-                </div>
-                <div className="box-item">
-                  <span className="icon">
-                    <i className=""></i>
-                  </span>
-                  <div className="text">
-                    <h4>UI/UX Design</h4>
-                    <p>Adobe XD, Figma, SASS, Bootstrap</p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
             <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
@@ -278,33 +137,19 @@ const IndexPage = () => {
             </div>
             <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12">
               <div className="content-right">
-                <div className="box-item">
-                  <span className="icon">
-                    <i className=""></i>
-                  </span>
-                  <div className="text">
-                    <h4>Back End Development</h4>
-                    <p>Node, Java, Python, Spring Boot</p>
+                {technologies.slice(3, 6).map(t => (
+                  <div className="box-item">
+                    <Link to={`/technologies/${t.slug}/`}>
+                      <span className="icon">
+                        <LineIcon name={t.icon} />
+                      </span>
+                      <div className="text">
+                        <h4 className="text-black">{t.name}</h4>
+                        <p className="text-black">{t.shortDescription}</p>
+                      </div>
+                    </Link>
                   </div>
-                </div>
-                <div className="box-item">
-                  <span className="icon">
-                    <i className=""></i>
-                  </span>
-                  <div className="text">
-                    <h4>Server Maintenance</h4>
-                    <p>AWS, Heroku, Azure, Firebase, GCP</p>
-                  </div>
-                </div>
-                <div className="box-item">
-                  <span className="icon">
-                    <i className=""></i>
-                  </span>
-                  <div className="text">
-                    <h4>Database Management</h4>
-                    <p>MySQL, PostgreSQL, MongoDB</p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -574,14 +419,16 @@ const IndexPage = () => {
             </div>
             <div className="col-lg-5 col-md-12 col-xs-12">
               <div className="map">
-                {/* <!-- <object style="border:0; height: 280px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15551.540327412644!2d77.6363799!3d12.9792013!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42f703e556009bfd!2sSoftobotics%20Technologies!5e0!3m2!1sen!2sin!4v1632591129949!5m2!1sen!2sin"></object> --> */}
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8847851910655!2d77.63417461455332!3d12.979220268223443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42f703e556009bfd!2sSoftobotics%20Technologies!5e0!3m2!1sen!2sin!4v1644156346863!5m2!1sen!2sin"
+                  title="Google Map"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3889.0656098610348!2d77.6037132!3d12.9035027!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae151ee8f11d4b%3A0xf3f926959c69a2e5!2sPrerana%20Towers%2C%20Ranka%20Colony%20Rd%2C%20Munivenkatppa%20Layout%2C%20Bilekahalli%2C%20Bengaluru%2C%20Karnataka%20560076!5e0!3m2!1sen!2sin!4v1653310518111!5m2!1sen!2sin"
                   width="100%"
-                  height="280"
+                  height="400"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
                   style={{ border: "0px" }}
                   allowFullScreen=""
-                  loading="lazy"
                 ></iframe>
               </div>
             </div>

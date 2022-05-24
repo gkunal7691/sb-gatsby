@@ -1,7 +1,7 @@
 import React from "react"
 import about from "../images/about.png"
 import { Link } from "gatsby"
-import "../assests/styles/about-us.scss"
+import "../assets/styles/about-us.scss"
 import SbBanner from "./sb-banner"
 
 const AboutUsPage = () => {

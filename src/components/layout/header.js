@@ -1,10 +1,13 @@
 import React from "react"
-import logo from "../../images/logo.png"
+// import logo from "../../images/logo.png"
 import { StaticImage } from "gatsby-plugin-image"
-import "../../assests/styles/header.scss"
+import "../../assets/styles/header.scss"
 import { Link } from "gatsby"
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
-const Header = () => {
+import services from "../../assets/json/services.json"
+import technologies from "../../assets/json/technologies.json"
+
+const Header = ({ active }) => {
   return (
     <React.Fragment>
       <Navbar
@@ -24,57 +27,67 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto navbar-link">
               <Nav.Link>
-                <Link to="/">Home</Link>
+                <Link className={active === "index" ? "active" : ""} to="/">
+                  Home
+                </Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to="/about-us">About us</Link>
+                <Link
+                  className={active === "about-us" ? "active" : ""}
+                  to="/about-us"
+                >
+                  About Us
+                </Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to="/portfolios">Portfolios</Link>
+                <Link
+                  className={active === "portfolios" ? "active" : ""}
+                  to="/portfolios"
+                >
+                  Portfolios
+                </Link>
               </Nav.Link>
-              <NavDropdown title="Service" id="collasible-nav-dropdown">
-                <NavDropdown.Item>
-                  <Link className="dropdown-style" to="/services">
-                    Mobile Apps
-                  </Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <Link className="dropdown-style" to="/service-page/web-app/">
-                    Web Apps
-                  </Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <Link
-                    className="dropdown-style"
-                    to="/service-page/front-end/"
-                  >
-                    Fron End
-                  </Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <Link className="dropdown-style" to="/service-page/back-end/">
-                    Back End
-                  </Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <Link className="dropdown-style" to="/service-page/seo/">
-                    SEO
-                  </Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-                  <Link
-                    className="dropdown-style"
-                    to="/service-page/outsourcing/"
-                  >
-                    Outsourcing
-                  </Link>
-                </NavDropdown.Item>
+              <NavDropdown
+                className={active === "index" ? "active" : ""}
+                title="Services"
+                id="collasible-nav-dropdown"
+              >
+                {services.map(s => (
+                  <NavDropdown.Item>
+                    <Link
+                      className="dropdown-style"
+                      to={`/services/${s.slug}/`}
+                    >
+                      {s.name}
+                    </Link>
+                  </NavDropdown.Item>
+                ))}
+              </NavDropdown>
+              <NavDropdown title="Technologies" id="collasible-nav-dropdown">
+                {technologies.map(t => (
+                  <NavDropdown.Item>
+                    <Link
+                      className="dropdown-style"
+                      to={`/technologies/${t.slug}/`}
+                    >
+                      {t.name}
+                    </Link>
+                  </NavDropdown.Item>
+                ))}
               </NavDropdown>
               <Nav.Link>
                 <Link to="/tools">Tools</Link>
               </Nav.Link>
               <Nav.Link>
                 <Link to="/blog">Blogs</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link
+                  className={active === "careers" ? "active" : ""}
+                  to="/careers"
+                >
+                  Careers
+                </Link>
               </Nav.Link>
             </Nav>
             {/* <Nav></Nav> */}

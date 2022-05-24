@@ -1,19 +1,21 @@
 import React from "react"
 import { Link } from "gatsby"
 import logo1 from "../../images/logosm.png"
-import facebook from "../../images/facebook.svg"
 import location from "../../images/location_on_black_24dp.svg"
 import call from "../../images/call_black_24dp.svg"
 import email from "../../images/email_black_24dp.svg"
-import "../../assests/styles/footer.scss"
+import "../../assets/styles/footer.scss"
 import { StaticImage } from "gatsby-plugin-image"
+import services from "../../assets/json/services.json"
+import technologies from "../../assets/json/technologies.json"
+import LineIcon from "react-lineicons"
 
 const FooterPage = () => {
   return (
     <footer className="footer-area">
       <div className="container px-0">
         <div className="row mx-0 px-3 px-md-0">
-          <div className="col-lg-6 col-md-6 col-12 px-0">
+          <div className="col-lg-3 col-md-6 col-12 px-0">
             <div className="widget">
               <img className="footer-logo" src={logo1} alt="logo" />
               <div className="textwidget">
@@ -26,7 +28,7 @@ const FooterPage = () => {
                   rel="noreferrer"
                   to="https://www.linkedin.com/company/softobotics"
                 >
-                  <img src={facebook} alt="facebook" />
+                  <LineIcon name="linkedin-original" />
                 </Link>
                 <Link
                   className="facebook"
@@ -34,51 +36,49 @@ const FooterPage = () => {
                   rel="noreferrer"
                   to="https://www.facebook.com/softoboticsadmin"
                 >
-                  <i className="lni-facebook-filled"></i>
+                  <LineIcon name="facebook-filled" />
                 </Link>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-md-3 col-12 px-0">
             <h3 className="footer-title">Our Services</h3>
-            <ul className="footer-link px-0">
-              <li>
-                <Link to="/services/">Mobile Apps</Link>
-              </li>
-              <li>
-                <Link to="/service-page/web-app/">Web Apps</Link>
-              </li>
-              <li>
-                <Link to="/service-page/front-end/">Fron End</Link>
-              </li>
-              <li>
-                <Link to="/service-page/back-end/">Back End</Link>
-              </li>
-              <li>
-                <Link to="/service-page/seo/">SEO</Link>
-              </li>
-              <li>
-                <Link to="/service-page/outsourcing/">Outsourcing</Link>
-              </li>
+            <ul className="ms-0 footer-link px-0">
+              {services.map(s => (
+                <li>
+                  <Link to={`/services/${s.slug}/`}>{s.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="col-lg-3 col-md-3 col-12 px-0">
+            <h3 className="footer-title">Technologies</h3>
+            <ul className="ms-0 footer-link px-0">
+              {technologies.map(s => (
+                <li>
+                  <Link to={`/technologies/${s.slug}/`}>{s.name}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="col-lg-3 col-md-3 col-12 px-0">
             <h3 className="footer-title">Contact</h3>
-            <ul className="address px-0">
+            <ul className="ms-0 address px-0">
               <li>
                 <Link to="#">
-                  <img src={location} /> #235, 2nd & 3rd Floor, 13th Cross Rd,
-                  Indira Nagar II Stage, Bengaluru, Karnataka 560038
+                  <img src={location} />
+                  Prerana Towers, 1st Floor, Ranka Colony Road, Bilekahalli,
+                  Bengaluru, Karnataka 560076
                 </Link>
               </li>
               <li>
-                <Link to="#">
+                <Link to="tel:+918147594806">
                   <img src={call} />
                   Mobile: +91-8147594806
                 </Link>
               </li>
               <li>
-                <Link to="#">
+                <Link to="mailto:info@softobotics.com">
                   <img src={email} /> Email: info@softobotics.com
                 </Link>
               </li>
@@ -92,9 +92,9 @@ const FooterPage = () => {
           <div className="col-md-12">
             <div className="copyright-content">
               <p>
-                Copyright © 2021
+                Copyright © {new Date().getFullYear()}
                 <a href="https://www.softobotics.com">
-                  <b>Softobotics Technologies</b>
+                  <strong>&nbsp;Softobotics Technologies</strong>
                 </a>
                 . All Right Reserved
               </p>

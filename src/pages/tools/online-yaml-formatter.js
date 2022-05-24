@@ -2,7 +2,7 @@ import React from "react"
 import SbTextArea from "../sb-textarea"
 import SbRelatedPage from "../sb-related-tools"
 import SbHeading from "../sb-heading"
-import "../../assests/styles/tools/online-yaml-formatter.scss"
+import "../../assets/styles/tools/online-yaml-formatter.scss"
 
 const YamlFormatter = () => {
   return (

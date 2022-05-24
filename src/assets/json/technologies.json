@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Front End Development",
+    "slug": "front-end",
+    "title": "Front End Development",
+    "shortDescription": "Angular, React, Vue, JavaScript etc.",
+    "longDescription": "Front end frameworks are a huge topic of debate in the development community and many developers have strong opinions about which one to use. At Softobotics, we work with all the three major front end frameworks – Angular, React and Vue. Whether you are looking for a PWA, a React-based Static Site, or an extensive web portal with Angular, at Softobotics we will help you find the best solution for your project.",
+    "icon": "rocket"
+  },
+  {
+    "name": "Mobile Apps",
+    "slug": "mobile-apps",
+    "title": "Mobile Apps (Android, iOS, Cross Platform)",
+    "shortDescription": "Flutter, React Native, Swift, Kotlin",
+    "longDescription": "Developers have three different ways to make mobile apps these days: web, hybrid, and native. Each has its own pros and cons, but the differences are greater than ever before as every technology advances at an exponential rate. React Native and Flutter have been making waves recently because they’re easy to use, fast to develop with, and don’t require any new languages or frameworks to implement. What they also have in common is that they only support Android at the moment. So which should you choose? And what will the future of mobile development look like?\n\nGet in touch with us and we'll help you find the best solutions for your mobile app project",
+    "icon": "laptop-phone"
+  },
+  {
+    "name": "UI/UX Design",
+    "slug": "ui-ux",
+    "title": "UI/UX Design",
+    "shortDescription": "Adobe XD, Figma, SASS, Bootstrap, Zeplin",
+    "longDescription": "A good User Interface (UI) & User experience (UX) is one of the most overlooked aspects of running a business, but it's also one of the most important factors in making your business successful. In fact, recent surveys show that 71% of customers consider good UX to be more important than the features of the product itself, indicating that good UX can be the key to building loyal customers who will keep coming back and referring their friends and family members to your business. If you want to achieve that level of success with your business, let us help you provide the best user experience to your customers. We work with all major UX development tools such as Adobe XD, Figma, Zeplin, Creative Suite, and more.",
+    "icon": "cog"
+  },
+  {
+    "name": "Back End Development",
+    "slug": "back-end",
+    "title": "Back End Development",
+    "shortDescription": "Node, Java, Python, Spring Boot",
+    "longDescription": "When it comes to developing a back end, the more languages and frameworks you can use, the better. By having the ability to choose between different technologies, you open up many possibilities, since you’re able to use the right tool for the job instead of being limited by your skill set. At Softobotics, we work with all major back end technologies such as NodeJS, Django, Flask, and Java with Spring Boot. Get in touch with our team of experts and let us help you find the best solution for your product.",
+    "icon": "leaf"
+  },
+  {
+    "name": "Cloud Computing",
+    "slug": "cloud-computing",
+    "title": "Cloud Computing Platforms",
+    "shortDescription": "AWS, Heroku, Azure, GCP, Firebase",
+    "longDescription": "Cloud computing has made it easier than ever to start and run a business from anywhere in the world, and today’s businesses are taking advantage of cloud computing in countless ways. If you’re thinking about switching to the cloud, or if you want to learn more about how to use cloud services for your business, get in touch with us today to learn how your business can benefit from the cloud. We work with all major cloud providers such as AWS, Google Cloud, Azure, Heroku, DigitalOcean, and Firebase.",
+    "icon": "cloud-network"
+  },
+  {
+    "name": "Database Management",
+    "slug": "database",
+    "title": "Database Management",
+    "shortDescription": "MySQL, PostgreSQL, MongoDB",
+    "longDescription": "Choosing the right database system is an important decision, and there are a number of factors to consider when making that choice. NoSQL databases have become popular in recent years because they offer greater scalability than relational databases, but they are also different from relational databases in other ways. At Softobotics, we work with all major database systems—MySQL, PostgreSQL, and mongodb. We help make an informed decision about which one will work best for your business requirements and handle all the management for your database, so that you can leave the heavy lifting of running and managing your database on us.",
+    "icon": "layers"
+  }
+]

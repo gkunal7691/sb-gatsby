@@ -3,7 +3,7 @@ import SbTextArea from "../sb-textarea"
 import SbRelatedPage from "../sb-related-tools"
 import SbHeading from "../sb-heading"
 import { Link } from "gatsby"
-import "../../assests/styles/tools/online-xml-to-json-convertor.scss"
+import "../../assets/styles/tools/online-xml-to-json-convertor.scss"
 
 const XmlToJson = () => {
   return (

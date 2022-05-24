@@ -1,6 +1,6 @@
 import { graphql, Link } from "gatsby"
 import React from "react"
-import "../assests/styles/blogs.scss"
+import "../assets/styles/blogs.scss"
 import SbHeading from "../pages/sb-heading"
 import breadcrumIcon from "../images/angle-right-solid.svg"
 import Seo from "../components/layout/seo"

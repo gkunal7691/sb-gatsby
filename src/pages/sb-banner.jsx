@@ -1,14 +1,16 @@
 import React from "react"
 import Layout from "../components/layout/layout"
-import "../assests/styles/sb-banner.scss"
+import "../assets/styles/sb-banner.scss"
+import Seo from "../components/layout/seo"
 
-const SbBanner = ({ sbActive, children, title }) => {
+const SbBanner = ({ sbActive, children, title, description }) => {
   return (
-    <Layout active={"sb-banner"}>
+    <Layout active={sbActive}>
+      <Seo title={title} description={description} />
       <div className="header row justify-content-center align-items-center">
         <h1 className="text-center">{title}</h1>
       </div>
-      <div sbActive={sbActive}>
+      <div>
         <div>{children}</div>
       </div>
     </Layout>

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import "../assests/styles/tools.scss"
+import "../assets/styles/tools.scss"
 import SbHeading from "./sb-heading"
 
 const ToolsPage = () => {

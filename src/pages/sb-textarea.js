@@ -1,5 +1,5 @@
 import React from "react"
-import "../assests/styles/sb-textarea.scss"
+import "../assets/styles/sb-textarea.scss"
 
 const SbTextArea = ({ type }) => {
   return (
