@@ -1,14 +1,13 @@
-import React from "react"
 import { Link } from "gatsby"
-import logo1 from "../../images/logosm.png"
-import location from "../../images/location_on_black_24dp.svg"
-import call from "../../images/call_black_24dp.svg"
-import email from "../../images/email_black_24dp.svg"
-import "../../assets/styles/footer.scss"
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react"
+import LineIcon from "react-lineicons"
 import services from "../../assets/json/services.json"
 import technologies from "../../assets/json/technologies.json"
-import LineIcon from "react-lineicons"
+import "../../assets/styles/footer.scss"
+import call from "../../images/call_black_24dp.svg"
+import email from "../../images/email_black_24dp.svg"
+import location from "../../images/location_on_black_24dp.svg"
+import logo1 from "../../images/logosm-transparent.png"
 
 const FooterPage = () => {
   return (
@@ -41,7 +40,7 @@ const FooterPage = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-md-3 col-12 px-0">
+          <div className="col-lg-3 col-md-3 col-12 px-0 ml-0">
             <h3 className="footer-title">Our Services</h3>
             <ul className="ms-0 footer-link px-0">
               {services.map(s => (
@@ -66,20 +65,36 @@ const FooterPage = () => {
             <ul className="ms-0 address px-0">
               <li>
                 <Link to="#">
-                  <img src={location} />
-                  Prerana Towers, 1st Floor, Ranka Colony Road, Bilekahalli,
-                  Bengaluru, Karnataka 560076
+                  <div className="row d-flex">
+                    <div className="flex_0">
+                      <img src={location} />
+                    </div>
+                    <div className="flex_80">
+                      {" "}
+                      Prerana Towers, 1st Floor, Ranka Colony Road, Bilekahalli,
+                      Bengaluru, Karnataka 560076
+                    </div>
+                  </div>
                 </Link>
               </li>
               <li>
                 <Link to="tel:+918147594806">
-                  <img src={call} />
-                  Mobile: +91-8147594806
+                  <div className="row d-flex">
+                    <div className="flex_0">
+                      <img src={call} />
+                    </div>
+                    <div className="flex_80"> Mobile: +91-8147594806</div>
+                  </div>
                 </Link>
               </li>
               <li>
                 <Link to="mailto:info@softobotics.com">
-                  <img src={email} /> Email: info@softobotics.com
+                  <div className="row d-flex">
+                    <div className="flex_0">
+                      <img src={email} />
+                    </div>
+                    <div className="flex_80">Email: info@softobotics.com </div>
+                  </div>
                 </Link>
               </li>
             </ul>

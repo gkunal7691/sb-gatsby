@@ -181,7 +181,7 @@ const IndexPage = () => {
               </Link>
             </div>
           </div>
-          <div className="testimonial-item">
+          <div className="testimonial-item ml-4">
             <div className="img-thumb">
               <Link
                 target="_blank"
@@ -191,7 +191,7 @@ const IndexPage = () => {
                 <StaticImage
                   src="../images/testimonial/eraofwe-logo.png"
                   alt="eraofwe-logo"
-                  wid
+                  width={139}
                 />
               </Link>
             </div>

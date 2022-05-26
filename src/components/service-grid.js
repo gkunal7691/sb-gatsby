@@ -1,8 +1,8 @@
-import React, { useState } from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import services from "../assets/json/services.json"
+import React, { useState } from "react"
 import LineIcon from "react-lineicons"
+import services from "../assets/json/services.json"
+import "../assets/styles/services.scss"
 
 const ServiceGrid = ({ showHeading }) => {
   const [hindex, setHindex] = useState(-1)
@@ -22,7 +22,7 @@ const ServiceGrid = ({ showHeading }) => {
           {services.map((s, i) => (
             <div className="col-md-6 col-lg-4 col-xs-12">
               <div
-                className="services-item wow fadeInRight"
+                className="services-item wow fadeInRight pading_div"
                 data-wow-delay="1.5s"
                 onMouseLeave={() => setHindex(-1)}
                 onMouseOver={() => setHindex(i)}

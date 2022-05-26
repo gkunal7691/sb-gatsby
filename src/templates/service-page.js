@@ -28,7 +28,7 @@ const ServicesPage = ({ pageContext }) => {
               <div className="blog-text">
                 <h4>{pageContext.shortDescription}</h4>
                 <div className="blog-divider"></div>
-                <div className="blog-description">
+                <div className="blog-description pb-4">
                   <p>{pageContext.longDescription}</p>
                 </div>
               </div>

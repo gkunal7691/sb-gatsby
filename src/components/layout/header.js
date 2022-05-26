@@ -48,7 +48,7 @@ const Header = ({ active }) => {
                 </Link>
               </Nav.Link>
               <NavDropdown
-                className={active === "index" ? "active" : ""}
+                className={active === "web-apps" ? "active" : ""}
                 title="Services"
                 id="collasible-nav-dropdown"
               >
